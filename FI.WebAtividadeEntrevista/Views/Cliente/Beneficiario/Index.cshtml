@@ -1,0 +1,50 @@
+﻿@model IEnumerable<WebAtividadeEntrevista.Models.BeneficiarioModel>
+<div class="modal fade" id="modalBeneficiarios">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Beneficiários</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Conteudo da modal -->
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="CPFBeneficiario">CPF:</label>
+                            <input required="required" type="text" class="form-control" id="CPFBeneficiario" name="CPFBeneficiario" placeholder="Ex.: 999.999.999-99" maxlength="14">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="NomeBeneficiario">Nome:</label>
+                            <input required="required" type="text" class="form-control" id="NomeBeneficiario" name="NomeBeneficiario" placeholder="Ex.: João" maxlength="50">
+                        </div>
+                    </div>
+                    <div class="col col-md-2 align-self-end">
+                        <div class="">
+                            <button type="button" class="btn btn-sm btn-success form-control" id="AddBeneficiario">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table>
+                            <thead class="row">
+                                <th class="col-md-4">CPF:</th>
+                                <th class="col-md-4">NOME:</th>
+                                <th></th>
+                            </thead>
+                                <tbody id="tbody">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Fim Conteudo da modal -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
